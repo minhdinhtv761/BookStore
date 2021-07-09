@@ -55,7 +55,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="MainWindow.xaml">
+    <Page Include="View\MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -63,7 +63,94 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="MainWindow.xaml.cs">
+    <Compile Include="Model\BaoCaoCongNo.cs" />
+    <Compile Include="Model\BaoCaoTon.cs" />
+    <Compile Include="Model\CTBaoCaoCongNo.cs" />
+    <Compile Include="Model\CTBaoCaoTon.cs" />
+    <Compile Include="Model\CTHD.cs" />
+    <Compile Include="Model\CTPhieuNhap.cs" />
+    <Compile Include="Model\dataluong.Context.cs" />
+    <Compile Include="Model\dataluong.Context1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dataluong.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\dataluong.cs" />
+    <Compile Include="Model\dataluong.designer.cs">
+      <DependentUpon>dataluong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\dataluong1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dataluong.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\DataProvider.cs" />
+    <Compile Include="Model\HoaDon.cs" />
+    <Compile Include="Model\KhachHang.cs" />
+    <Compile Include="Model\local.Context.cs" />
+    <Compile Include="Model\local.Context1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>local.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\local.cs" />
+    <Compile Include="Model\local.designer.cs">
+      <DependentUpon>local.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\local1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>local.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Model1.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Model1.cs" />
+    <Compile Include="Model\Model1.designer.cs">
+      <DependentUpon>Model1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Model11.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Model3.Context.cs" />
+    <Compile Include="Model\Model3.Context1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model3.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Model3.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model3.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\NguoiDung.cs" />
+    <Compile Include="Model\NhaXuatBan.cs" />
+    <Compile Include="Model\PhieuNhap.cs" />
+    <Compile Include="Model\PhieuThuTien.cs" />
+    <Compile Include="Model\QuyDinh.cs" />
+    <Compile Include="Model\Sach.cs" />
+    <Compile Include="Model\sever.Context.cs" />
+    <Compile Include="Model\sever.Context1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sever.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\sever.cs" />
+    <Compile Include="Model\sever.designer.cs">
+      <DependentUpon>sever.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\sever1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sever.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\TacGia.cs" />
+    <Compile Include="Model\TheLoai.cs" />
+    <Compile Include="View\MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
@@ -86,6 +173,16 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="Model\dataluong.edmx" />
+    <None Include="Model\dataluong.edmx.diagram" />
+    <None Include="Model\local.edmx" />
+    <None Include="Model\local.edmx.diagram" />
+    <None Include="Model\Model1.edmx" />
+    <None Include="Model\Model1.edmx.diagram" />
+    <None Include="Model\Model3.edmx" />
+    <None Include="Model\Model3.edmx.diagram" />
+    <None Include="Model\sever.edmx" />
+    <None Include="Model\sever.edmx.diagram" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -93,6 +190,54 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ViewModel\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Model\dataluong.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>dataluong.Context1.cs</LastGenOutput>
+    </Content>
+    <Content Include="Model\dataluong.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>dataluong1.cs</LastGenOutput>
+    </Content>
+    <Content Include="Model\local.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>local.Context1.cs</LastGenOutput>
+    </Content>
+    <Content Include="Model\local.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>local1.cs</LastGenOutput>
+    </Content>
+    <Content Include="Model\Model1.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Model1.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Model\Model1.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Model11.cs</LastGenOutput>
+    </Content>
+    <Content Include="Model\Model3.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Model3.Context1.cs</LastGenOutput>
+    </Content>
+    <Content Include="Model\Model3.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Model3.cs</LastGenOutput>
+    </Content>
+    <Content Include="Model\sever.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>sever.Context1.cs</LastGenOutput>
+    </Content>
+    <Content Include="Model\sever.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>sever1.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
