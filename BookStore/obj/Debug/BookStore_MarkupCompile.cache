@@ -4,12 +4,12 @@
 winexe
 C#
 .cs
-D:\NMCNPM\BookStore\obj\Debug\
+D:\dev\BookStore\BookStore\obj\Debug\
 BookStore
 none
 false
 DEBUG;TRACE
-D:\NMCNPM\BookStore\App.xaml
+D:\dev\BookStore\BookStore\App.xaml
 1-1711142684
 10-964337350
 4594646245
