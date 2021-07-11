@@ -18,7 +18,5 @@
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("model/model3.tt")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("model/sever.context.tt")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("model/sever.tt")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("qlns.mdf")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("qlns_log.ldf")]
 
 

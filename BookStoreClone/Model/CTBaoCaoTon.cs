@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace BookStoreClone.Model
+namespace BookStore.Model
 {
     using System;
     using System.Collections.Generic;

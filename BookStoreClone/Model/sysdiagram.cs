@@ -12,14 +12,12 @@ namespace BookStore.Model
     using System;
     using System.Collections.Generic;
     
-    public partial class QuyDinh
+    public partial class sysdiagram
     {
-        public int MaQuyDinh { get; set; }
-        public System.DateTime NgayCapNhat { get; set; }
-        public int SoLuongSachTonToiThieuDeNhap { get; set; }
-        public int SoLuongSachNhapToiThieu { get; set; }
-        public int TienNoToiDa { get; set; }
-        public int SoLuongSachTonToiThieuSauKhiBan { get; set; }
-        public bool DuocThuVuotSoTienKhachHangDangNo { get; set; }
+        public string name { get; set; }
+        public int principal_id { get; set; }
+        public int diagram_id { get; set; }
+        public Nullable<int> version { get; set; }
+        public byte[] definition { get; set; }
     }
 }
